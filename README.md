@@ -10,3 +10,12 @@ pip install -r requirements.txt  # install
 ```
 
 </details>
+
+<details open>
+EDA
+
+```bash
+python EDA/eda.py --file <filename>
+```
+
+</details>
