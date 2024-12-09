@@ -1,9 +1,7 @@
 Bosch Interview 
 
-<details open>
-Install
-
-Clone repo and install [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) in a [**Python>=3.8.0**](https://www.python.org/) environment, including [**PyTorch>=1.8**](https://pytorch.org/get-started/locally/).
+<Install open>
+To Install prepare the enviornment locally please follow the below command
 
 ```bash
 python -m venv .venv # clone
@@ -11,13 +9,13 @@ source .venv/bin/activate
 pip install -r requirements.txt  # install
 ```
 
-</details>
+</Install>
 
-<details open>
+<EDA open>
 EDA
 
 ```bash
 python EDA/eda.py --file <filename>
 ```
 
-</details>
+</EDA>
