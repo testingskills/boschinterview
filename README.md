@@ -1,9 +1,12 @@
-# boschinterview
-Requirements
+<details open>
+<summary>Install</summary>
 
-Python 3.7 or later with all requirements.txt dependencies installed, including torch >= 1.5. To install run:
+Clone repo and install [requirements.txt](https://github.com/ultralytics/yolov5/blob/master/requirements.txt) in a [**Python>=3.8.0**](https://www.python.org/) environment, including [**PyTorch>=1.8**](https://pytorch.org/get-started/locally/).
 
-$ python -m venv .venv
-$ source .venv\bin\activate # for linux
-$ .venv\bin\activate.bat # for windows
-$ pip install -U -r requirements.txt
+```bash
+python -m venv .venv # clone
+source .venv/bin/activate
+pip install -r requirements.txt  # install
+```
+
+</details>
