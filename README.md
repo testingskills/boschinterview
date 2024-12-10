@@ -19,4 +19,4 @@ python detect.py --weights yolov5s.pt --img 640 --conf 0.25 --source data/images
 ### Yolov5 Model Training
 ```
 cd yolov5
-python train.py --img 640 --batch 16 --epochs 1 --data data/bdd100k.yaml --weights yolov5s.pt
+python train.py --img 640 --batch 16 --epochs 1 --data data/bdd100k.yaml --weights yolov5.pt
