@@ -14,7 +14,7 @@ python eda.py
 ### Yolov5 Model detection
 ```
 cd yolov5
-python detect.py --weights yolov5s.pt --img 640 --conf 0.25 --source data/images
+python detect.py --weights yolov5.pt --img 640 --conf 0.25 --source data/images
 ```
 ### Yolov5 Model Training
 ```
