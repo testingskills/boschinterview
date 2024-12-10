@@ -21,4 +21,4 @@ unzip 100k_images_val.zip -d yolov5/dataset/
 rm 100k_images_train.zip
 rm 100k_images_val.zip
 cd yolov5
-python prepsrocess.py
+python preprocess.py
