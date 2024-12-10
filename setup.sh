@@ -15,6 +15,7 @@ mkdir train
 mkdir val
 cd ../../../../../
 python3 download_files.py
+mv yolov5.pt yolov5/
 mv bdd100k_labels_images_train.json yolov5/dataset/bdd100k/
 mv bdd100k_labels_images_val.json yolov5/dataset/bdd100k/
 wget https://dl.cv.ethz.ch/bdd100k/data/100k_images_train.zip
