@@ -1,4 +1,3 @@
-# Ultralytics YOLOv5 🚀, AGPL-3.0 license
 """
 Train a YOLOv5 model on a custom dataset. Models and datasets download automatically from the latest YOLOv5 release.
 
@@ -8,10 +7,6 @@ Usage - Single-GPU training:
 
 Usage - Multi-GPU DDP training:
     $ python -m torch.distributed.run --nproc_per_node 4 --master_port 1 train.py --data coco128.yaml --weights yolov5s.pt --img 640 --device 0,1,2,3
-
-Models:     https://github.com/ultralytics/yolov5/tree/master/models
-Datasets:   https://github.com/ultralytics/yolov5/tree/master/data
-Tutorial:   https://docs.ultralytics.com/yolov5/tutorials/train_custom_data
 """
 
 import argparse
@@ -128,11 +123,6 @@ def train(hyp, opt, device, callbacks):
         $ python -m torch.distributed.run --nproc_per_node 4 --master_port 1 train.py --data coco128.yaml --weights
         yolov5s.pt --img 640 --device 0,1,2,3
         ```
-
-        For more usage details, refer to:
-        - Models: https://github.com/ultralytics/yolov5/tree/master/models
-        - Datasets: https://github.com/ultralytics/yolov5/tree/master/data
-        - Tutorial: https://docs.ultralytics.com/yolov5/tutorials/train_custom_data
     """
     save_dir, epochs, batch_size, weights, single_cls, evolve, data, cfg, resume, noval, nosave, workers, freeze = (
         Path(opt.save_dir),
@@ -557,11 +547,6 @@ def parse_opt(known=False):
         opt = parse_opt()
         print(opt)
         ```
-
-    Links:
-        - Models: https://github.com/ultralytics/yolov5/tree/master/models
-        - Datasets: https://github.com/ultralytics/yolov5/tree/master/data
-        - Tutorial: https://docs.ultralytics.com/yolov5/tutorials/train_custom_data
     """
     parser = argparse.ArgumentParser()
     parser.add_argument("--weights", type=str, default=ROOT / "yolov5s.pt", help="initial weights path")
@@ -905,10 +890,6 @@ def generate_individual(input_ranges, individual_length):
         individual = generate_individual(input_ranges, individual_length)
         print(individual)  # Output: [0.035, 0.678, 1.456] (example output)
         ```
-
-    Note:
-        The individual returned will have a length equal to `individual_length`, with each gene value being a floating-point
-        number within its specified range in `input_ranges`.
     """
     individual = []
     for i in range(individual_length):
@@ -969,10 +950,6 @@ def run(**kwargs):
         train.run(data='coco128.yaml', imgsz=320, weights='yolov5m.pt')
         ```
 
-    Notes:
-        - Models: https://github.com/ultralytics/yolov5/tree/master/models
-        - Datasets: https://github.com/ultralytics/yolov5/tree/master/data
-        - Tutorial: https://docs.ultralytics.com/yolov5/tutorials/train_custom_data
     """
     opt = parse_opt(True)
     for k, v in kwargs.items():

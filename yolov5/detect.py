@@ -1,4 +1,3 @@
-# Ultralytics YOLOv5 🚀, AGPL-3.0 license
 """
 Run YOLOv5 detection inference on images, videos, directories, globs, YouTube, webcam, streams, etc.
 
@@ -417,8 +416,7 @@ def main(opt):
 
     Note:
         This function performs essential pre-execution checks and initiates the YOLOv5 detection process based on user-specified
-        options. Refer to the usage guide and examples for more information about different sources and formats at:
-        https://github.com/ultralytics/ultralytics
+        options. 
 
     Example usage:
 
