@@ -9,7 +9,7 @@ source .venv/bin/activate
 ### EDA Assignment
 ```
 cd EDA
-python eda.py
+python eda.py --file <dir to file>
 ```
 ### Yolov5 Model detection
 ```
